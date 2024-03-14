@@ -1,0 +1,32 @@
+Question 3: Describe the "Box Model" in CSS and explain how the box-sizing property affects an element's layout. Provide examples of different values for box-sizing and their impact.
+
+Answer : The Box Model in CSS describes the space taken up by an element on a web page. It consists of the content area, padding, border, and margin.
+
+- Content: The actual content of the element, such as text or images.
+- Padding: The space between the content and the border.
+- Border: The border surrounding the padding and content.
+- Margin: The space outside the border, separating the element from other elements.
+
+The box-sizing property determines how the width and height of an element are calculated, including the content, padding, and border.
+
+- box-sizing: content-box;: This is the default value. It calculates the width and height only based on the content, ignoring padding and border.
+- box-sizing: border-box;: The width and height include the content, padding, and border.
+
+Example:
+
+
+div {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+/* With content-box, the total width will be 230px (200px content + 20px padding + 5px border) */
+div.content-box {
+    box-sizing: content-box;
+}
+
+/* With border-box, the total width will be 200px */
+div.border-box {
+    box-sizing: border-box;
+}

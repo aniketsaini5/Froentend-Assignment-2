@@ -1,0 +1,255 @@
+<!-- Question 1: Create an HTML table that displays your class schedule. It should include columns for the day of the week, subject name, and time. Style it with CSS to make it visually appealing. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Class Schedule</title>
+    </head>
+    <style>
+        body{
+            font-family: cursive, 'Times New Roman', Times, serif;
+            margin: 80;
+            padding: 90;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        table{
+            text-align: center;
+        }
+        .Heading{
+            font-size: xx-large;
+            background-color: blue;
+            color: WHITE;
+        }
+        .head{
+            background-color: orange;
+        }
+        .Break{
+            background-color: red;
+        }
+        .Vocational{
+            background-color: aqua;
+        }
+        .Open{
+            background-color: rgb(184, 114, 231);
+        }
+        .FSI{
+            background-color: yellow;
+        }
+    </style>
+    <body>
+        <table border="3" cellpadding="6" cellspacing="1" >
+            <tr>
+                <th class="Heading" colspan="4"> Time Table BCA 4 sem</th>
+            </tr>
+
+            <tr class="head">
+                <th>Day</th>
+                <th>Lecture</th>
+                <th>Class</th>
+                <th>Time</th>
+            </tr>
+            <!-- TUES -->
+            <tr>
+                <td rowspan="8">Tuesday</td>
+                <td>1</td>
+                <td>Fundamental of Computer Networks (L) - Dr. Poonam [C205]</td>
+                <td>09:20 AM - 10:10 AM</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Cloud Computing (L) - Ms. Shreya [C205] </td>
+                <td>10:10 AM - 11:00 AM</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td rowspan="2">Front End Technologies (P) - Mr. Ronak [C305]</td>
+                <td rowspan="2">11:00 AM - 12:40 PM</td>
+            </tr>
+            <tr>
+                <td>4</td>
+            </tr>
+            <tr class="Break">
+                <td>5</td>
+                <td></td>
+                <td>12:40 PM - 01:30 PM</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td rowspan="2">Java Programming (P) - Mr. Aslam [GTH-2]</td>
+                <td rowspan="2">1:30 PM - 03:10 PM</td>
+            </tr>
+            <tr>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Front End Technologies (L) - Mr. Ronak [C205]</td>
+                <td>03:10 PM - 04:00 PM</td>
+            </tr>
+
+          <!-- WED -->
+
+          <tr>
+            <td rowspan="8">Wednesday</td>
+            <td>1</td>
+            <td>Fundamental of Computer Networks (L) - Dr. Poonam [C205]</td>
+            <td>09:20 AM - 10:10 AM</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>JAVA Programming (L) - Mr. Aslam [C201]</td>
+            <td>10:10 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td ></td>
+            <td ></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Cloud Computing (L) - Ms. Shreya [C205]</td>
+            <td>11:00 AM - 12:40 PM</td>
+        </tr>
+        <tr class="Break">
+            <td>5</td>
+            <td></td>
+            <td>12:40 PM - 01:30 PM</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td rowspan="3" class="Open">Open Electives</td>
+            <td rowspan="3">1:30 PM - 04:00 PM</td>
+        </tr>
+        <tr>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+        </tr>
+
+        <!-- THU -->
+        <tr>
+            <td rowspan="8">Thursday</td>
+            <td>1</td>
+            <td rowspan="2" class="FSI">Communication Skills-VII (G1) - Mr. Raj Gopal [C205]</td>
+            <td rowspan="2">09:20 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td rowspan="2" class="FSI">Aptitude (L) - Mr. Mohit [C206]</td>
+            <td rowspan="2">11:00 AM - 12:40 PM</td>
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+        <tr class="Break">
+            <td>5</td>
+            <td></td>
+            <td>12:40 PM - 01:30 PM</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td >Java Programming (L) - Mr. Aslam [C205]</td>
+            <td >1:30 PM - 02:20 PM</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td rowspan="2" class="FSI">Communication Skills-VII (G2) - Mr. Raj Gopal [C206]</td>
+            <td rowspan="2">02:20 AM - 04:00 AM</td>
+        </tr>
+        <tr>
+            <td>8</td>
+
+        </tr>
+
+        <!-- FRI -->
+
+        <tr>
+            <td rowspan="8">Friday</td>
+            <td>1</td>
+            <td rowspan="2">Front End Technologies (P) - Mr. Ronak [GTH-1]</td>
+            <td rowspan="2">09:20 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="Break">
+            <td>5</td>
+            <td></td>
+            <td>12:40 PM - 01:30 PM</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Seminar I - Ms. Shreya [C205]</td>
+            <td>02:20 PM - 03:10 PM</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td></td>
+            <td></td>
+        </tr>
+          <!-- SAT -->
+          <tr>
+            <td rowspan="8">Saturday</td>
+            <td>1</td>
+            <td rowspan="3" class="Vocational">Vocational Skills </td>
+            <td rowspan="3">09:20 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td>2</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Fundamental of Computer Networks (L) - Dr. Poonam [C205]</td>
+            <td>11:00 AM - 12:40 PM</td> 
+        </tr>
+        <tr class="Break">
+            <td>5</td>
+            <td></td>
+            <td>12:40 PM - 01:30 PM</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td >Java Programming (L) - Mr. Aslam [C205]</td>
+            <td >1:30 PM - 03:10 PM</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Cloud Computing (L) - Ms. Shreya [C205]</td>
+            <td>03:10 PM - 04:00 PM</td>
+        </tr>
+
+        </table>
+    </body>
+
+</html>
